@@ -1,0 +1,17 @@
+  Date-17/07/2020
+  
+  Module -Database
+  
+  Name-Rahul Govardhan Shilwant
+  
+  Student id-200240520077
+
+
+
+1) Does ANSI recognize the data type DATE? 
+	Ans:- yes , The ANSI SQL standards specify qualifiers and formats for representations of DATETIME
+	default Date format is YYYY-MM-DD.
+
+2)Which Subdivision of SQL is used to insert values in tables?
+	Ans:-INSERT is Used to INSERT data into Table.
+	E.g. INSERT into EMP(EID,ENAME,SAL)values (101,'Rahul',50000);	  
