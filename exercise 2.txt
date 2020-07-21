@@ -1,0 +1,55 @@
+
+
+	Name:   Rahul Shilwant
+	
+	roll no: 200240520077
+
+      
+      -- Question 1
+
+      select * from S order by City desc;
+      
+      -- Question 3
+      
+      select * from S where status between 5 and 10;
+      
+      select * from S where status >=10 and status<=20;
+      
+      -- Qustion 4
+      
+      select * from P;
+      
+      select * from P where Weight not between 10 and 15;
+      
+      -- Question 5
+      
+      select * from P where Pname like 'S%';
+      
+      select * from P where Pname >'s' and Pname <'t';
+      
+      -- Question 6
+      
+      select * from S where City like 'L%';
+      
+      
+      -- Question 7
+      
+      select * from j;
+	
+      insert into j values('j4','jenny','London');
+      
+      select * from j where Jname like '%n%';
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+ 
+      
+      

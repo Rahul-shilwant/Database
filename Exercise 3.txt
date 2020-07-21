@@ -1,0 +1,40 @@
+
+				name :- Rahul Shilwant
+
+				
+				roll:- 200240520077
+
+
+
+	1. Display all the Supplier names with the initial letter capital
+	ans:- select concat( upper(substr( sname , 1 , 1  )) , lower( substr( sname  ,2 ) ) ) from supplier;
+
+
+	2. Display all the Supplier names in upper case. 
+	ans:- select  upper(sname) 'Game of Thrones' from supplier;
+
+
+
+	3. Display all the Supplier names in lower case.   
+	ans:- select lower(sname) 'Game of Thrones' from supplier;
+
+
+	4. Display all the Supplier names padded to 25 characters, with spaces on the left. 
+	ans:- select rpad(sname , 25 , '')  'Game of Thrones' from supplier;
+
+
+	5. Display all the Supplier names (with ‘la’ replaced by ‘ro’).      
+	  HINT: REPLACE
+	ans:- select replace(sname ,'la' , 'ro') from supplier; 
+
+
+	6. Implement the above command such that ‘l’ is replaced with ‘r’ and ‘a’ is replaced with ‘o’. 
+	ans:- select replace(  replace(sname , 'L' , 'r'),'A' , 'o') from supplier;
+
+	
+	7. Display the Supplier names and the lengths of the names.   
+	ans:- select sname "Name" , length(sname) from supplier;
+
+
+	8. Use the soundex function to search for a supplier by the name of ‘BLOKE’
+	ans:-select sname 'supplier name' from supplier where soundex(sname) = soundex('blowk');
