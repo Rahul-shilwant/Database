@@ -1,0 +1,43 @@
+	name : Rahul Shilwant
+
+	roll : 200240520077
+
+
+
+
+	1) Write a query that lists each order number followed by the name of the customer
+		who made the order.
+
+
+		ans :select orders.onum 'order number', customers.cname 'customer name' from orders , customers where orders.cnum = customers.cnum order by cname ; 
+
+
+	2) Write a query that gives the names of both the salesperson and the customer for each order along with the order number.
+
+
+
+		ans : select salespeople.sname 'salespeople name' , customers.cname 'customer name' , orders.onum 'order number' 
+    
+			from orders , customers , salespeople where salespeople.snum = customers.snum and salespeople.snum = orders.snum group by cname , sname , onum;
+    
+	
+	
+	3) Write a query that produces all customers serviced by salespeople with a commission above 12%. Output the customer’s name, the salesperson’s name,and the salesperson’s rate of commission.
+	
+	
+		ans : select customers.cname 'customer name' , salespeople.sname 'salespeople name' , salespeople.comm from  customers ,  salespeople 
+			
+			where salespeople.snum = customers.snum  and salespeople.comm>0.12 ;	
+
+
+	4) Write a query that calculates the amount of the salesperson’s commission on each order by a customer with a rating above 100.
+
+		
+		ans : select sname 'salespeople name' , cname 'customers name', customers.rating  , salespeople.comm*amt 'commision' from orders , customers , salespeople where  	
+		salespeople.snum = customers.snum and salespeople.snum  = orders.snum and customers.rating>100;
+		
+
+
+
+
+
